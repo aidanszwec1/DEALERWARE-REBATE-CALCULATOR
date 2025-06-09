@@ -32,8 +32,8 @@ if data_file:
         st.metric("DUM (Customer Stores)", int(group_row["DUM"]))
         st.metric("Prospects in SAM", int(group_row["DUM"])) # If you want a different mapping, adjust here
         st.metric("SAM", int(group_row["SAM"]))
-        st.metric("Current SAM Penetration %", f"{group_row['SAM PEN']*100:.2f}%")
     with col2:
+        st.metric("Current SAM Penetration %", f"{group_row['SAM PEN']*100:.2f}%")
         st.metric("TAM", int(group_row["TAM"]))
 
         # Try to find the Net New ARR column dynamically
