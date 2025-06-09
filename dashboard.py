@@ -30,7 +30,7 @@ if data_file:
     col1, col2 = st.columns(2)
     with col1:
         st.metric("DUM (Customer Stores)", int(group_row["DUM"]))
-        st.metric("Prospects in SAM", int(group_row["DUM"])) # If you want a different mapping, adjust here
+        st.metric("Prospects in SAM", int(group_row["NUM_SAM"]))
         st.metric("SAM", int(group_row["SAM"]))
     with col2:
         st.metric("TAM", int(group_row["TAM"]))
