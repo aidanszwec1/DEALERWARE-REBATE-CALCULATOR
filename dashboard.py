@@ -35,7 +35,7 @@ if data_file:
         st.metric("Current SAM Penetration %", f"{group_row['SAM PEN']*100:.2f}%")
     with col2:
         st.metric("TAM", int(group_row["TAM"]))
-        st.metric("TAM Penetration %", f"{group_row['SAM']/group_row['TAM']*100 if group_row['TAM'] else 0:.2f}%")
+
         # Try to find the Net New ARR column dynamically
         net_new_arr_col = None
         for col in df.columns:
